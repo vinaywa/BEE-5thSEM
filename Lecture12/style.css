@@ -1,0 +1,20 @@
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.btn{
+   margin-left: 20px;
+   
+}
+.parent{
+    margin-top: 50px;
+    padding: 20px 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2{
+    margin-left: 20px;
+}
