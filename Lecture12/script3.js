@@ -1,11 +1,18 @@
 
-let todo={
+let todos=[
+    {
     id:1234,
     title:"Csk"
-}
+  },
+  {
+    id:12345,
+    title:"RCB"
+  }
+]
 let ul=document.querySelector("#parent")
-function addTodo()
+function addTodo(todo)
 {
+    
     let li=document.createElement("li")
     li.setAttribute("id",`${todo.id}`)
     li.innerHTML=` <div>
@@ -20,4 +27,10 @@ function addTodo()
         ul.appendChild(li);
 
 }
-addTodo(todo)
+// addTodo(todo)
+function showallTodo(todos){
+    todos.forEach(todo => {
+        addTodo(todo);
+    });
+}
+showallTodo(todos)
