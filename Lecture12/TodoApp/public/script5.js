@@ -9,6 +9,21 @@ fetch("http://localhost:4000/todos")
     todoArray=data
     showallTodo(todoArray)
 })
+// fetch('http://localhost:4000/todos', {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify([
+//     { id: "123455660", title: "delhi" },
+//     { id: "2566660", title: "punjab" },
+//     { id: "388566660", title: "haryana" }
+//   ])
+// })
+// .then(response => response.json())
+// .then((data) => {
+//     todoArray=data
+// showallTodo(todoArray)
+// })
+// .catch(error => console.error('Error:', error));
 
 
 
