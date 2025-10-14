@@ -1,5 +1,5 @@
 {
-  "name": "lec-28",
+  "name": "lecture30",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.16.1",
-    "prisma": "^6.16.1"
+    "ws": "^8.18.3"
   }
 }

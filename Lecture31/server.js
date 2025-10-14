@@ -1,6 +1,7 @@
-const  { WebSocketServer } =require('ws');
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: 8080 });
 
-const wss = new WebSocketServer({ port: 8080 });
+
 
 // wss.on("connection",function(socket){
 //     console.log("a new user connected");
@@ -26,16 +27,15 @@ const wss = new WebSocketServer({ port: 8080 });
 // })
 
 // broadcast
-let allSockets=[]
-wss.on("connection",function(socket){
+// let allSockets=[]
+// wss.on("connection",function(socket){
 
-    console.log("user connected")
-    allSockets.push(socket)
-    // console.log(allSockets)
-    socket.on("message",function(message){
-        allSockets.forEach((n)=>{
-          n.send(message.toString())
-        })
-    })
+//     console.log("user connected")
+//     allSockets.push(socket)// console.log(allSockets)
+//     socket.on("message",function(message){
+//         allSockets.forEach((n)=>{
+//           n.send(message.toString())
+//         })
+//     })
 
-})
+// })
